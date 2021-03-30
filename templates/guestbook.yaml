@@ -1,19 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root
+  name: guestbook
+  namespace: default
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    server: https://kubernetes.default.svc
     namespace: default
+    server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: apps/
-    repoURL: https://github.com/r1nzl3r-bl4ck/argocd-demo.git
+    path: guestbook
+    repoURL: https://github.com/argoproj/argocd-example-apps
     targetRevision: HEAD
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
