@@ -15,5 +15,5 @@ spec:
     helm:
       valueFiles:
       - values.yaml
-    repoURL: https://github.com/r1nzl3r-bl4ck/emotions_api
+    repoURL: https://r1nzl3r-bl4ck.github.io/argocd-demo/charts
     targetRevision: 0.1.0
