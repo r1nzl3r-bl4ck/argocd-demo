@@ -16,3 +16,4 @@ spec:
       valueFiles:
       - values.yaml
     repoURL: https://github.com/r1nzl3r-bl4ck/emotions_api
+    targetRevision: 0.1.0
