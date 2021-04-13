@@ -3,7 +3,17 @@ entries:
   emotions-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-13T18:19:02.05587-05:00"
+    created: "2021-04-13T18:38:05.732094-05:00"
+    description: A Helm chart for Kubernetes
+    digest: c92cbf58ed112c3a23714c0d0d3cf0ae960af9d124c9b88c8bde91d2b09e1302
+    name: emotions-api
+    type: application
+    urls:
+    - emotions-api-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-04-13T18:38:05.731606-05:00"
     description: A Helm chart for Kubernetes
     digest: f40cde4ef782ca49e4a39aaa64661e53481ca23d3b1eed0237758808c18008ae
     name: emotions-api
@@ -11,4 +21,4 @@ entries:
     urls:
     - emotions-api-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-13T18:19:02.05525-05:00"
+generated: "2021-04-13T18:38:05.730887-05:00"
