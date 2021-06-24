@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kube-prometheus-stack
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: monitoring
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    chart: kube-prometheus-stack
+    helm:
+      valueFiles:
+      - values.yaml
+    repoURL: https://r1nzl3r-bl4ck.github.io/argocd-demo/charts
+    targetRevision: 16.11.0
