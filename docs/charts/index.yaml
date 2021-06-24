@@ -3,7 +3,7 @@ entries:
   emotions-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-13T18:38:05.732094-05:00"
+    created: "2021-06-24T18:32:24.486694-05:00"
     description: A Helm chart for Kubernetes
     digest: c92cbf58ed112c3a23714c0d0d3cf0ae960af9d124c9b88c8bde91d2b09e1302
     name: emotions-api
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-04-13T18:38:05.731606-05:00"
+    created: "2021-06-24T18:32:24.486266-05:00"
     description: A Helm chart for Kubernetes
     digest: f40cde4ef782ca49e4a39aaa64661e53481ca23d3b1eed0237758808c18008ae
     name: emotions-api
@@ -21,4 +21,56 @@ entries:
     urls:
     - emotions-api-0.1.0.tgz
     version: 0.1.0
-generated: "2021-04-13T18:38:05.730887-05:00"
+  kube-prometheus-stack:
+  - annotations:
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: 16.11.0
+    created: "2021-06-24T18:32:24.508576-05:00"
+    dependencies:
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.3.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 1.18.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 6.13.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards, and Prometheus rules combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus Operator.
+    digest: d45b797fd57953250104a1df066bf68746c2631fbe8f535a908de7e861d83b1b
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: vsliouniaev
+    - name: bismarck
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+    - email: scott@r6by.com
+      name: scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - kube-prometheus-stack-16.11.0.tgz
+    version: 16.11.0
+generated: "2021-06-24T18:32:24.485621-05:00"
