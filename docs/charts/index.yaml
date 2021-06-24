@@ -3,7 +3,7 @@ entries:
   emotions-api:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-24T18:32:24.486694-05:00"
+    created: "2021-06-24T18:55:27.21026-05:00"
     description: A Helm chart for Kubernetes
     digest: c92cbf58ed112c3a23714c0d0d3cf0ae960af9d124c9b88c8bde91d2b09e1302
     name: emotions-api
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2021-06-24T18:32:24.486266-05:00"
+    created: "2021-06-24T18:55:27.20979-05:00"
     description: A Helm chart for Kubernetes
     digest: f40cde4ef782ca49e4a39aaa64661e53481ca23d3b1eed0237758808c18008ae
     name: emotions-api
@@ -31,7 +31,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: 16.11.0
-    created: "2021-06-24T18:32:24.508576-05:00"
+    created: "2021-06-24T18:55:27.229906-05:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
@@ -46,7 +46,7 @@ entries:
       repository: https://grafana.github.io/helm-charts
       version: 6.13.*
     description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards, and Prometheus rules combined with documentation and scripts to provide easy to operate end-to-end Kubernetes cluster monitoring with Prometheus using the Prometheus Operator.
-    digest: d45b797fd57953250104a1df066bf68746c2631fbe8f535a908de7e861d83b1b
+    digest: 957a4a369a59d6126ff6fcb5eeb5d4211e209556786209c3f8db2a1c660342cd
     home: https://github.com/prometheus-operator/kube-prometheus
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     keywords:
@@ -73,4 +73,4 @@ entries:
     urls:
     - kube-prometheus-stack-16.11.0.tgz
     version: 16.11.0
-generated: "2021-06-24T18:32:24.485621-05:00"
+generated: "2021-06-24T18:55:27.209088-05:00"
