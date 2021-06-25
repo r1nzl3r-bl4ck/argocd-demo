@@ -17,3 +17,6 @@ spec:
       - values.yaml
     repoURL: https://r1nzl3r-bl4ck.github.io/argocd-demo/charts
     targetRevision: 16.11.0
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
